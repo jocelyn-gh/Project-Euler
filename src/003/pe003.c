@@ -5,6 +5,12 @@
  * Github: jocelyn-gh/Project-Euler 
  *---------------------*/
 
+/*
+ * Looked at https://www.tutorialspoint.com/c-program-for-find-largest-prime-factor-of-a-number for help
+ * Arnab Chakraborty
+ */
+
+
 /*-----------------------
  * The prime factors of 13195 are 5, 7, 13 and 29.
  *
