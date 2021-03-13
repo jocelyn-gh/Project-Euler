@@ -13,18 +13,18 @@
 #include <stdio.h> 
 #include <math.h>
 
-int getLargestPrimeFactor(int number){
+unsigned long int getLargestPrimeFactor(unsigned long int number){
 
     int largestPrime = 0;
 
     while (number % 2 == 0) {
         number /= 2; 
     }
-    
-    for (int i = 3; i <= (int)sqrt(number); i += 2) {
+        
+    for (int i = 3; i <= (unsigned long int)sqrt(number); i += 2) {
         while (number % i == 0) {
             largestPrime = i;
-            printf("prime = %d \n", number);
+            printf("prime = %lu \n", number);
             number /= i;
        } 
     }
@@ -38,7 +38,7 @@ int getLargestPrimeFactor(int number){
 
 int main()
 {
-    int number = 13195;
-    printf("Largest prime factor of the number %d is %d\n", number, getLargestPrimeFactor(number));
+    unsigned long int number = 600851475143;
+    printf("Largest prime factor of the number %lu is %lu\n", number, getLargestPrimeFactor(number));
     return 0;
 }
