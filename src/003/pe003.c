@@ -30,7 +30,6 @@ unsigned long int getLargestPrimeFactor(unsigned long int number){
     for (int i = 3; i <= (unsigned long int)sqrt(number); i += 2) {
         while (number % i == 0) {
             largestPrime = i;
-            printf("prime = %lu \n", number);
             number /= i;
        } 
     }
