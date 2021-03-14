@@ -5,10 +5,6 @@
  * Github: jocelyn-gh/Project-Euler 
  *---------------------*/
 
-/*
- * Looked at https://www.tutorialspoint.com/c-program-for-find-largest-prime-factor-of-a-number for help
- * Arnab Chakraborty
- */
 
 
 /*-----------------------
@@ -16,28 +12,28 @@
  *
  * What is the largest prime factor of the number 600851475143 ?
  *----------------------*/
+
+/*-----------------------
+ * mathematical proof
+ *
+ *
+ *
+ *
+ *
+ *
+ *
+ *----------------------*/
+
+
+
+
 #include <stdio.h> 
 #include <math.h>
 
 unsigned long int getLargestPrimeFactor(unsigned long int number){
-
-    int largestPrime = 0;
-
-    while (number % 2 == 0) {
-        number /= 2; 
-    }
-        
-    for (int i = 3; i <= (unsigned long int)sqrt(number); i += 2) {
-        while (number % i == 0) {
-            largestPrime = i;
-            number /= i;
-       } 
-    }
-
-    if (number > 2) {
-        largestPrime = number;
-    }
-       
+    
+    unsigned long int largestPrime = 0;
+      
     return largestPrime;    
 }
 
